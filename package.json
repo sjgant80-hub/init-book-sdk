@@ -1,30 +1,16 @@
 {
   "name": "@ai-native-solutions/init-book-sdk",
   "version": "1.0.0",
+  "description": "init-book SDK · sovereign single-file library extracted from init-book/index.html",
   "type": "module",
-  "description": "Sovereign SDK for INIT · the framework book - 9-chapter reader logic, chapter progress tracker (IDB), theme toggle, print export, SVG diagram generators, chapter navigation.",
-  "main": "./src/index.js",
-  "types": "./src/index.d.ts",
-  "exports": {
-    ".": { "types": "./src/index.d.ts", "import": "./src/index.js" },
-    "./chapters": "./src/chapters.js",
-    "./progress": "./src/progress.js",
-    "./diagrams": "./src/diagrams.js"
-  },
-  "files": ["src/", "docs/", "examples/", "README.md", "LICENSE"],
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "files": ["src", "docs", "README.md", "LICENSE"],
   "scripts": {
-    "example": "node examples/quick-start.mjs"
+    "test": "node --test test/",
+    "smoke": "node examples/smoke.js"
   },
-  "keywords": [
-    "init-book",
-    "framework-book",
-    "sovereign",
-    "estate",
-    "ai-native-solutions",
-    "indexeddb",
-    "reader",
-    "private"
-  ],
+  "keywords": ["init-book", "sdk", "sovereign", "ai-native-solutions"],
   "author": "AI-Native Solutions",
   "license": "MIT",
   "repository": {
@@ -32,13 +18,7 @@
     "url": "https://github.com/sjgant80-hub/init-book-sdk.git"
   },
   "homepage": "https://sjgant80-hub.github.io/init-book-sdk/",
-  "bugs": {
-    "url": "https://github.com/sjgant80-hub/init-book-sdk/issues"
-  },
   "publishConfig": {
     "access": "public"
-  },
-  "engines": {
-    "node": ">=18"
   }
 }
